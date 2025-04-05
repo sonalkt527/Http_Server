@@ -8,7 +8,8 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 
-public class HttpConnectionThread extends Thread{
+public class
+HttpConnectionThread extends Thread{
 
 
     private Socket socket;
@@ -21,10 +22,11 @@ public class HttpConnectionThread extends Thread{
     public void run() {
         InputStream inputStream =null;
         OutputStream outputStream=null;
+
+
         try {
           inputStream = socket.getInputStream();
            outputStream = socket.getOutputStream();
-
             //TODO we wourld read
 
             String html = "<html><head><title>simple java server</title></head><body>Simple Java http server</body>";
